@@ -1,0 +1,12 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+    - node_modules
+env:
+  - CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: "bf2965cc-cb9c-4a81-b44d-0c024eb8d012"
+  app: frozen-shelf-68944
